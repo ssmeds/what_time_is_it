@@ -16,5 +16,6 @@ function clock() {
     // Declaring that "today" is a new method which we will later use
     let today = new Date();
     // Displaying the hours, minutes and seconds
-    div.innerHTML = `${today.getHours()} : ${today.getMinutes()} : ${today.getSeconds()}`;
+    div.innerHTML = `${String(today.getHours()).padStart(2,"0")} : ${String(today.getMinutes()).padStart(2,"0")} : ${String(today.getSeconds()).padStart(2,"0")}`;
+
 };
